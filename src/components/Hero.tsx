@@ -10,12 +10,12 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-20 left-10 w-64 h-64 rounded-full bg-violet-light/30 blur-3xl"
+          className="absolute top-20 left-10 w-64 h-64 rounded-full bg-gold/10 blur-3xl"
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 8, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-magenta-light/40 blur-3xl"
+          className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl"
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.4, 0.6, 0.4] }}
           transition={{ duration: 10, repeat: Infinity }}
         />
@@ -60,54 +60,6 @@ const Hero = () => {
             that celebrate life's precious moments. Now, bring that magic home with 
             our immersive virtual try-on experience.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
-            <motion.a
-              href="#collections"
-              className="px-8 py-4 text-base font-medium cta-gradient text-primary-foreground rounded-full shadow-card hover:shadow-hover transition-all duration-300"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Explore Collections
-            </motion.a>
-            <motion.a
-              href="https://shop.swarna.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 text-base font-medium bg-transparent border-2 border-primary/30 text-foreground rounded-full hover:border-primary hover:bg-primary/5 transition-all duration-300"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Visit Our Store
-            </motion.a>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="mt-16 flex items-center justify-center gap-8 text-center"
-          >
-            <div>
-              <p className="font-serif text-3xl md:text-4xl font-semibold text-gold">50+</p>
-              <p className="text-sm text-muted-foreground mt-1">Years of Legacy</p>
-            </div>
-            <div className="w-px h-12 bg-border" />
-            <div>
-              <p className="font-serif text-3xl md:text-4xl font-semibold text-gold">10K+</p>
-              <p className="text-sm text-muted-foreground mt-1">Happy Families</p>
-            </div>
-            <div className="w-px h-12 bg-border" />
-            <div>
-              <p className="font-serif text-3xl md:text-4xl font-semibold text-gold">100%</p>
-              <p className="text-sm text-muted-foreground mt-1">Certified Gold</p>
-            </div>
-          </motion.div>
         </div>
       </div>
 

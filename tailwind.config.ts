@@ -55,15 +55,14 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
         },
-        violet: {
-          DEFAULT: "hsl(var(--violet))",
-          light: "hsl(var(--violet-light))",
+        maroon: {
+          DEFAULT: "hsl(var(--maroon))",
+          light: "hsl(var(--maroon-light))",
         },
-        magenta: {
-          DEFAULT: "hsl(var(--magenta))",
-          light: "hsl(var(--magenta-light))",
+        cream: {
+          DEFAULT: "hsl(var(--cream))",
+          dark: "hsl(var(--cream-dark))",
         },
-        cream: "hsl(var(--cream))",
         burgundy: "hsl(var(--burgundy))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
