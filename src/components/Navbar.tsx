@@ -20,7 +20,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="Gujjadi Swarna Jewellers" 
-              className="h-12 md:h-16 w-auto"
+              className="h-16 md:h-24 w-auto"
             />
           </motion.a>
           
@@ -34,7 +34,7 @@ const Navbar = () => {
             href="https://shop.swarna.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-2.5 text-sm font-medium cta-gradient text-primary-foreground rounded-full shadow-soft hover:shadow-hover transition-all duration-300"
+            className="px-6 py-2.5 text-sm font-medium bg-primary text-primary-foreground rounded-full shadow-soft hover:shadow-hover transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >

@@ -6,58 +6,57 @@
 
 @layer base {
   :root {
-    --background: 340 30% 98%;
-    --foreground: 340 50% 15%;
+    --background: 35 40% 96%;
+    --foreground: 0 30% 20%;
 
-    --card: 340 25% 97%;
-    --card-foreground: 340 50% 15%;
+    --card: 35 35% 94%;
+    --card-foreground: 0 30% 20%;
 
-    --popover: 340 25% 97%;
-    --popover-foreground: 340 50% 15%;
+    --popover: 35 35% 94%;
+    --popover-foreground: 0 30% 20%;
 
-    --primary: 330 65% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 45% 35%;
+    --primary-foreground: 40 40% 95%;
 
-    --secondary: 320 40% 92%;
-    --secondary-foreground: 330 50% 25%;
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 0 40% 25%;
 
-    --muted: 330 20% 94%;
-    --muted-foreground: 330 15% 45%;
+    --muted: 35 20% 92%;
+    --muted-foreground: 0 15% 45%;
 
-    --accent: 40 70% 55%;
+    --accent: 40 55% 65%;
     --accent-foreground: 40 80% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 330 25% 88%;
-    --input: 330 25% 88%;
-    --ring: 330 65% 45%;
+    --border: 35 25% 85%;
+    --input: 35 25% 85%;
+    --ring: 0 45% 35%;
 
     --radius: 0.75rem;
 
-    /* Custom luxury tokens */
-    --gold: 40 75% 55%;
-    --gold-light: 40 60% 75%;
-    --violet: 280 45% 50%;
-    --violet-light: 280 35% 85%;
-    --magenta: 330 65% 45%;
-    --magenta-light: 330 45% 92%;
-    --cream: 40 30% 96%;
-    --burgundy: 340 50% 25%;
+    /* Custom luxury tokens - Maroon Red & Golden Cream */
+    --gold: 40 55% 55%;
+    --gold-light: 40 45% 75%;
+    --maroon: 0 45% 35%;
+    --maroon-light: 0 35% 85%;
+    --cream: 35 40% 94%;
+    --cream-dark: 35 30% 88%;
+    --burgundy: 0 50% 25%;
 
-    /* Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(330, 45%, 95%) 0%, hsl(320, 35%, 92%) 50%, hsl(280, 30%, 92%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(330, 40%, 96%) 0%, hsl(320, 35%, 94%) 50%, hsl(340, 30%, 97%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(40, 75%, 55%) 0%, hsl(35, 80%, 65%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(340, 30%, 99%) 0%, hsl(330, 25%, 96%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(330, 65%, 45%) 0%, hsl(320, 55%, 50%) 50%, hsl(280, 45%, 50%) 100%);
+    /* Gradients - Satin Maroon & Golden Cream */
+    --gradient-luxury: linear-gradient(135deg, hsl(35, 40%, 96%) 0%, hsl(35, 35%, 92%) 50%, hsl(40, 30%, 94%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(35, 40%, 96%) 0%, hsl(35, 35%, 93%) 50%, hsl(40, 30%, 95%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(40, 55%, 55%) 0%, hsl(35, 60%, 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(35, 40%, 98%) 0%, hsl(35, 30%, 94%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(0, 45%, 35%) 0%, hsl(0, 40%, 40%) 50%, hsl(0, 50%, 30%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(330 40% 40% / 0.12);
-    --shadow-card: 0 8px 30px -8px hsl(330 40% 40% / 0.15);
-    --shadow-hover: 0 12px 40px -8px hsl(330 40% 40% / 0.2);
-    --shadow-gold: 0 4px 20px -4px hsl(40 75% 55% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(0 40% 30% / 0.12);
+    --shadow-card: 0 8px 30px -8px hsl(0 40% 30% / 0.15);
+    --shadow-hover: 0 12px 40px -8px hsl(0 40% 30% / 0.2);
+    --shadow-gold: 0 4px 20px -4px hsl(40 55% 55% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -70,42 +69,41 @@
   }
 
   .dark {
-    --background: 340 30% 8%;
-    --foreground: 340 20% 95%;
+    --background: 0 25% 10%;
+    --foreground: 35 20% 95%;
 
-    --card: 340 25% 12%;
-    --card-foreground: 340 20% 95%;
+    --card: 0 20% 14%;
+    --card-foreground: 35 20% 95%;
 
-    --popover: 340 25% 12%;
-    --popover-foreground: 340 20% 95%;
+    --popover: 0 20% 14%;
+    --popover-foreground: 35 20% 95%;
 
-    --primary: 330 55% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 40% 50%;
+    --primary-foreground: 40 40% 95%;
 
-    --secondary: 320 30% 18%;
-    --secondary-foreground: 330 30% 90%;
+    --secondary: 0 25% 20%;
+    --secondary-foreground: 35 30% 90%;
 
-    --muted: 330 20% 18%;
-    --muted-foreground: 330 15% 65%;
+    --muted: 0 20% 18%;
+    --muted-foreground: 35 15% 65%;
 
-    --accent: 40 60% 50%;
+    --accent: 40 50% 50%;
     --accent-foreground: 40 80% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 330 20% 20%;
-    --input: 330 20% 20%;
-    --ring: 330 55% 55%;
+    --border: 0 20% 22%;
+    --input: 0 20% 22%;
+    --ring: 0 40% 50%;
 
-    --gold: 40 65% 50%;
-    --gold-light: 40 50% 35%;
-    --violet: 280 40% 55%;
-    --violet-light: 280 30% 25%;
-    --magenta: 330 55% 55%;
-    --magenta-light: 330 35% 20%;
-    --cream: 40 20% 12%;
-    --burgundy: 340 40% 75%;
+    --gold: 40 50% 50%;
+    --gold-light: 40 40% 35%;
+    --maroon: 0 40% 50%;
+    --maroon-light: 0 30% 25%;
+    --cream: 35 20% 15%;
+    --cream-dark: 35 15% 12%;
+    --burgundy: 0 35% 70%;
   }
 }
 
@@ -169,12 +167,24 @@
     color: hsl(var(--burgundy));
   }
 
+  .text-maroon {
+    color: hsl(var(--maroon));
+  }
+
   .border-gold {
     border-color: hsl(var(--gold));
   }
 
+  .border-maroon {
+    border-color: hsl(var(--maroon));
+  }
+
   .bg-cream {
     background-color: hsl(var(--cream));
+  }
+
+  .bg-maroon {
+    background-color: hsl(var(--maroon));
   }
 }
 

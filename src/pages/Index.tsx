@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Products from "@/components/Products";
-import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,7 +9,6 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Products />
-      <CTASection />
       <Footer />
     </div>
   );
