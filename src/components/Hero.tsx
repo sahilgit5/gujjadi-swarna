@@ -3,9 +3,9 @@ import { Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section 
+    <section
       id="experience"
-      className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden pt-20"
+      className="relative flex items-center justify-center hero-gradient overflow-hidden pt-48 pb-12"
     >
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -44,7 +44,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-serif text-4xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight mb-6"
+            className="font-serif text-3xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight mb-4"
           >
             Experience Jewellery{" "}
             <span className="italic text-primary">Like Never Before</span>
@@ -54,12 +54,37 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
+            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed"
           >
-            For generations, Gujjadi Swarna Jewellers has crafted timeless pieces 
-            that celebrate life's precious moments. Now, bring that magic home with 
+            For generations, Gujjadi Swarna Jewellers has crafted timeless pieces
+            that celebrate life's precious moments. Now, bring that magic home with
             our immersive virtual try-on experience.
           </motion.p>
+
+          {/* Tutorial Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/GFlN0CXIlZw"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Tutorial: How to Begin Your Virtual Try-On Experience"
+                />
+              </div>
+              <div className="p-4 text-center bg-secondary/50">
+                <p className="text-sm text-muted-foreground">
+                  <span className="font-medium text-foreground">Watch the tutorial</span> to learn how to begin your virtual try-on experience
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
 

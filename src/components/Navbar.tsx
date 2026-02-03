@@ -17,13 +17,13 @@ const Navbar = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 400 }}
           >
-            <img 
-              src={logo} 
-              alt="Gujjadi Swarna Jewellers" 
-              className="h-16 md:h-24 w-auto"
+            <img
+              src={logo}
+              alt="Gujjadi Swarna Jewellers"
+              className="h-24 md:h-36 w-auto"
             />
           </motion.a>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             <NavItem href="#experience">Experience</NavItem>
             <NavItem href="#collections">Collections</NavItem>
