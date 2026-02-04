@@ -11,12 +11,15 @@ interface ProductCardProps {
 
 const ProductCard = ({ name, description, image, tryOnLink, index }: ProductCardProps) => {
   return (
-    <motion.div
+    <motion.a
+      href={tryOnLink}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative"
+      className="group relative block cursor-pointer"
     >
       <div className="relative overflow-hidden rounded-2xl card-gradient shadow-card hover:shadow-hover transition-all duration-500">
         {/* Image container */}
@@ -35,17 +38,12 @@ const ProductCard = ({ name, description, image, tryOnLink, index }: ProductCard
             initial={{ opacity: 0, y: 20 }}
             className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           >
-            <motion.a
-              href={tryOnLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
+            <div
+              className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium shadow-lg"
             >
               <Sparkles className="w-4 h-4" />
               Launch the Experience
-            </motion.a>
+            </div>
           </motion.div>
         </div>
 
@@ -63,7 +61,7 @@ const ProductCard = ({ name, description, image, tryOnLink, index }: ProductCard
         <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-gold/40 rounded-tr-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <div className="absolute bottom-20 left-4 w-8 h-8 border-b-2 border-l-2 border-gold/40 rounded-bl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 
