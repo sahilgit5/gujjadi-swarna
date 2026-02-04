@@ -13,7 +13,7 @@ const products = [
     name: "Emerald Golden Necklace",
     description: "A majestic statement piece featuring intricate gold filigree work adorned with vivid emeralds, inspired by ancient temple architecture.",
     image: product1,
-    tryOnLink: "https://nzgvg.zappar-us.io/8479731422985561863/",
+    tryOnLink: "https://nzgvg.zappar-us.io/9105054716357376137/",
   },
   {
     name: "Rose Gold Diamond Bracelet",
