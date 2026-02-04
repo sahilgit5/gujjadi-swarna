@@ -20,7 +20,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Gujjadi Swarna Jewellers"
-              className="h-24 md:h-36 w-auto"
+              className="h-28 md:h-40 w-auto"
             />
           </motion.a>
 

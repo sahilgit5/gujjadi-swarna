@@ -26,17 +26,17 @@ const ProductCard = ({ name, description, image, tryOnLink, index }: ProductCard
             alt={name}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          
+
           {/* Overlay on hover */}
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          
+
           {/* CTA Button on hover */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           >
             <motion.a
-              href={`https://${tryOnLink}`}
+              href={tryOnLink}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300"
