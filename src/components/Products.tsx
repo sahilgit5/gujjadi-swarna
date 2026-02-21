@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
 
-import product1 from "@/assets/product-1.png";
+
 import product2 from "@/assets/product-2.png";
 import product3 from "@/assets/product-3.png";
 import product4 from "@/assets/product-4.png";
@@ -10,22 +10,16 @@ import product6 from "@/assets/product-6.png";
 
 const products = [
   {
-    name: "Emerald Golden Necklace",
-    description: "A majestic statement piece featuring intricate gold filigree work adorned with vivid emeralds, inspired by ancient temple architecture.",
-    image: product1,
-    tryOnLink: "https://nzgvg.zappar-us.io/9105054716357376137/",
+    name: "Sapphire Cascade Set",
+    description: "A breathtaking ensemble of necklace and earrings featuring Ceylon sapphires set in white gold with diamond accents.",
+    image: product3,
+    tryOnLink: "https://nzgvg.zappar-us.io/6523368261116845264/",
   },
   {
     name: "Rose Gold Diamond Bracelet",
     description: "Exquisite rose gold bangle encrusted with brilliant-cut diamonds in a delicate floral lattice pattern, perfect for modern elegance.",
     image: product2,
     tryOnLink: "https://nzgvg.zappar-us.io/961274949322777611/",
-  },
-  {
-    name: "Sapphire Cascade Set",
-    description: "A breathtaking ensemble of necklace and earrings featuring Ceylon sapphires set in white gold with diamond accents.",
-    image: product3,
-    tryOnLink: "https://nzgvg.zappar-us.io/6523368261116845264/",
   },
   {
     name: "Diamond Starburst Ring",
